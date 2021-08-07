@@ -1,0 +1,94 @@
+@media screen and (min-width: 0px) and (max-width: 991px){
+	
+	/*Hamburger Menu Design */
+.hamburger{
+	position: relative;
+	height: 50px;
+	width: 60px;
+	cursor: pointer;
+}
+.hamburger span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30px;
+	height: 3px;
+	background:#fff;
+	display:block;
+	transition: 0.3s;
+}
+.hamburger span:nth-child(1){
+	margin-top: -9px;
+}
+.hamburger span:nth-child(2){
+	margin-top: 9px;
+}
+.hamburger.active span:nth-child(1){
+	transform: translate(-50%, -50%) rotate(-45deg);
+	margin-top: 0;
+}
+.hamburger.active span:nth-child(2){
+	opacity: 0;
+}
+.hamburger.active span:nth-child(3){
+	transform: translate(-50%, -50%) rotate(45deg);
+	margin-top: 0;
+}
+
+	
+}
+@media only screen and (max-width: 768px) {
+  header .navbar-brand {
+    padding-left: 1rem;
+  }
+  .section-1 .row .col-md-6 .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+  .section-2 .cover {
+    background-position: -25vmin -10vmin;
+  }
+  .numbers .rect {
+    width: 10rem;
+    height: 8rem;
+  }
+  .numbers .rect h1 {
+    font-size: 2rem;
+  }
+
+  .section-3 {
+    height: inherit;
+    padding: 10vmin !important;
+  }
+  .section-3 .row h1 {
+    padding: 6vmin 4vmin;
+  }
+  .section-3 .platform .col-md-6 {
+    text-align: center !important;
+  }
+  .section-3 .desktop i {
+    font-size: 8vmin;
+  }
+  .section-4 .carousel-item {
+    padding-left: 0.6rem;
+  }
+  footer .row .col-md-2 {
+    margin-top: 8vmin;
+  }
+}
+
+/* screen size 375px */
+
+@media only screen and (max-width: 375px) {
+  .section-4 .card {
+    width: 18em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .section-4 .carousel-inner {
+    margin-left: -4vmin;
+  }
+}
